@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import MobileSidebar from "../components/MobileSidebar";
-import Breadcrumbs from "../components/Breadcrumbs";
+import Breadcrumbs from "../components/BreadCrumbs";
 
 export default function DashboardLayout({
 	title,
