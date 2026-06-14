@@ -76,10 +76,10 @@ export default function SidebarContent({ items, theme, user }) {
 
 			{/* User profile footer with theme accent */}
 			<div className={`border-t p-4 ${theme?.border || "border-slate-200"}`}>
-				<div className="flex items-center gap-3 justify-between">
+				<div className="flex flex-col items-start gap-5 justify-between">
 					<div className="flex items-center gap-3">
 						<div
-							className={`h-10 w-10 rounded-full ${theme?.light || "bg-slate-200"} flex items-center justify-center font-semibold ${theme?.text || "text-slate-600"}`}
+							className={`h-10 w-10 rounded-full shadow-md ${theme?.border || "border-violet-100"} flex items-center justify-center font-semibold ${theme?.text || "text-slate-600"}`}
 						>
 							{user?.full_name ? user.full_name.charAt(0).toUpperCase() : "U"}
 						</div>
@@ -98,7 +98,7 @@ export default function SidebarContent({ items, theme, user }) {
 					</div>
 
 					<button
-						className="text-sm text-red-600 hover:text-red-800 px-2 py-1 rounded"
+						className={`text-sm font-sm ${theme?.text || "text-slate-500"} hover:${theme?.light || "bg-slate-100"} px-2 py-1 rounded`}
 						onClick={() => setLogoutOpen(true)}
 					>
 						Logout
