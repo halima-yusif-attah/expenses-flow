@@ -223,7 +223,7 @@ export default function NewRequest() {
 									name="vendor"
 									value={formData.vendor}
 									onChange={handleChange}
-									placeholder="e.g., Amazon, Walmart, Uber"
+									placeholder="e.g., Amazon, Kingdom bookstore, bolt"
 									className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
 								/>
 							</div>
