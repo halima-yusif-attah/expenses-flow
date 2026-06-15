@@ -59,7 +59,7 @@ export function AuthProvider({ children }) {
 				window.location.reload();
 			}
 		} catch (err) {
-			// ignore - best-effort
+			
 			console.debug("Could not verify session after logout:", err);
 		}
 	}, [loadAuthState]);
@@ -91,20 +91,6 @@ export function AuthProvider({ children }) {
 		};
 	}, [loadAuthState]);
 
-	// const value = useMemo(
-	// 	() => ({
-	// 		session,
-	// 		user: session?.user ?? null,
-	// 		profile,
-	// 		role: profile?.role ?? null,
-	// 		loading,
-	// 		isAuthenticated: Boolean(session?.user),
-	// 		signOut,
-	// 		refreshAuth: loadAuthState,
-	// 		updateProfile: updateUserProfile,
-	// 	}),
-	// 	[session, profile, loading, signOut, loadAuthState, updateUserProfile],
-	// );
 
 	const value = useMemo(
 		() => ({

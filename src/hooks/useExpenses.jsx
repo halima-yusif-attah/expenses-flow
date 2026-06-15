@@ -192,28 +192,3 @@ useEffect(() => {
 		refetch: fetchExpenses,
 	};
 }
-
-// Manager approves
-
-// Manager clicks Approve.
-// await supabase
-// 	.from("expense_requests")
-// 	.update({
-// 		status: "approved",
-// 		approved_by: profile.id,
-// 		approved_at: new Date().toISOString(),
-// 	})
-// 	.eq("id", expenseId);
-
-// Finance pays
-
-// Finance clicks Mark Paid.
-
-// await supabase
-//   .from("expense_requests")
-//   .update({
-//     status: "paid",
-//     paid_by: profile.id,
-//     paid_at: new Date().toISOString(),
-//   })
-//   .eq("id", expenseId);

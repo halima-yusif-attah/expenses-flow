@@ -1,45 +1,4 @@
-﻿// import { useState } from 'react'
-// import { Link } from 'react-router-dom'
-// import { sendPasswordReset } from '../../services/auth.service'
-
-// export default function ForgotPasswordPage() {
-//   const [email, setEmail] = useState('')
-//   const [message, setMessage] = useState('')
-//   const [errorMessage, setErrorMessage] = useState('')
-
-//   async function handleSubmit(event) {
-//     event.preventDefault()
-//     setMessage('')
-//     setErrorMessage('')
-
-//     try {
-//       await sendPasswordReset(email)
-//       setMessage('Password reset link sent. Check your email.')
-//     } catch (error) {
-//       setErrorMessage(error.message)
-//     }
-//   }
-
-//   return (
-//     <main className="auth-page">
-//       <section className="auth-panel">
-//         <p className="eyebrow">ExpenseFlow</p>
-//         <h1>Reset your password</h1>
-//         <form className="auth-form" onSubmit={handleSubmit}>
-//           <label>
-//             Email
-//             <input value={email} onChange={(event) => setEmail(event.target.value)} type="email" required />
-//           </label>
-//           {message && <p className="form-success">{message}</p>}
-//           {errorMessage && <p className="form-error">{errorMessage}</p>}
-//           <button>Send reset link</button>
-//         </form>
-//         <Link to="/login">Back to login</Link>
-//       </section>
-//     </main>
-//   )
-// }
-
+﻿
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Mail, ArrowLeft } from "lucide-react";

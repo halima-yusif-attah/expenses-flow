@@ -1,48 +1,4 @@
-﻿// import { useState } from 'react'
-// import { Link } from 'react-router-dom'
-// import { resendVerificationEmail } from '../../services/auth.service'
-
-// export default function VerifyEmailPage() {
-//   const [email, setEmail] = useState('')
-//   const [message, setMessage] = useState('')
-//   const [errorMessage, setErrorMessage] = useState('')
-
-//   async function handleResend(event) {
-//     event.preventDefault()
-//     setMessage('')
-//     setErrorMessage('')
-
-//     try {
-//       await resendVerificationEmail(email)
-//       setMessage('Verification email sent.')
-//     } catch (error) {
-//       setErrorMessage(error.message)
-//     }
-//   }
-
-//   return (
-//     <main className="auth-page">
-//       <section className="auth-panel">
-//         <p className="eyebrow">ExpenseFlow</p>
-//         <h1>Verify your email</h1>
-//         <p>Check your inbox for the verification link from ExpenseFlow.</p>
-//         <form className="auth-form" onSubmit={handleResend}>
-//           <label>
-//             Email
-//             <input value={email} onChange={(event) => setEmail(event.target.value)} type="email" required />
-//           </label>
-//           {message && <p className="form-success">{message}</p>}
-//           {errorMessage && <p className="form-error">{errorMessage}</p>}
-//           <button>Resend verification email</button>
-//         </form>
-//         <Link to="/login">Back to login</Link>
-//       </section>
-//     </main>
-//   )
-// }
-
-
-import { Link, useLocation } from "react-router-dom";
+﻿import { Link, useLocation } from "react-router-dom";
 import { MailCheck, ArrowLeft, HelpCircle } from "lucide-react";
 import { resendVerificationEmail } from "../../services/auth.service";
 import { useState } from "react";
@@ -65,7 +21,6 @@ export default function VerifyEmail() {
 			setErrorMessage(error.message);
 		}
 	}
-	// resendVerificationEmail;
 
 	return (
 		<div className="space-y-6 text-center sm:text-left">

@@ -1,44 +1,4 @@
-﻿// import { useState } from 'react'
-// import { Link, useNavigate } from 'react-router-dom'
-// import { updatePassword } from '../../services/auth.service'
-
-// export default function ResetPasswordPage() {
-//   const navigate = useNavigate()
-//   const [password, setPassword] = useState('')
-//   const [errorMessage, setErrorMessage] = useState('')
-
-//   async function handleSubmit(event) {
-//     event.preventDefault()
-//     setErrorMessage('')
-
-//     try {
-//       await updatePassword(password)
-//       navigate('/login', { replace: true })
-//     } catch (error) {
-//       setErrorMessage(error.message)
-//     }
-//   }
-
-//   return (
-//     <main className="auth-page">
-//       <section className="auth-panel">
-//         <p className="eyebrow">ExpenseFlow</p>
-//         <h1>Create a new password</h1>
-//         <form className="auth-form" onSubmit={handleSubmit}>
-//           <label>
-//             New password
-//             <input value={password} onChange={(event) => setPassword(event.target.value)} type="password" minLength="8" required />
-//           </label>
-//           {errorMessage && <p className="form-error">{errorMessage}</p>}
-//           <button>Update password</button>
-//         </form>
-//         <Link to="/login">Back to login</Link>
-//       </section>
-//     </main>
-//   )
-// }
-
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Lock, Eye, EyeOff, ArrowLeft } from "lucide-react";
 import { updatePassword } from "../../services/auth.service";
